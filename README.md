@@ -1,5 +1,6 @@
 # Personal Food Log App
 
+**Group 1** Yifei Xie, Zongkai Tong, Peihan Li
 **Course:** ELG5100 – Software Project Management  
 **University of Ottawa**
 
