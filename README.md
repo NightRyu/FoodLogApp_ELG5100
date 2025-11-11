@@ -38,11 +38,15 @@ cd FoodLogApp_ELG5100
 ```
 
 ### Option 2 – Manual Download
-```bash
+
 Go to the GitHub repository page.
-Click Code → Download ZIP.
-Extract the ZIP file and open the folder in your terminal or VS Code.
-```
+
+
+Click Code → Download ZIP.  
+
+
+Extract the ZIP file and open the folder in your terminal or VS Code.  
+
 
 ## 2. Install Dependencies
 
