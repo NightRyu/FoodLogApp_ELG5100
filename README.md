@@ -16,36 +16,66 @@ The system integrates **React (frontend)**, **Node.js + Express (backend)**, and
 
 ---
 
-## Key Features
+## Prerequisites
 
-- **AI Food Recognition:**  
-  Upload a food image and get automatic analysis of ingredients, calories, and macros.
+Before running the demo, ensure you have:
 
-- **Nutritional Analytics Dashboard:**  
-  Visualize daily, weekly, and total calorie consumption through interactive charts.
-
-- **Meal History Tracking:**  
-  Stores each user’s meal history for progress and health tracking.
-
-- **Cloud Integration:**  
-  Uses AWS (or other cloud services) for image storage and data persistence.
-
-- **User Profiles (Future Implementation):**  
-  Personalized dashboards and authentication to separate user data.
-
-- **Modern Architecture:**  
-  Built with **React + Vite** on the frontend and **Express + OpenAI SDK** on the backend.
+| Requirement | Version |
+|--------------|----------|
+| Node.js | ≥ 18.x |
+| npm | ≥ 9.x |
+| OpenAI API Key | Required |
+| Git | (optional, for cloning) |
 
 ---
 
-## Tech Stack
+## 1. Download the Project
 
-| Layer | Technology | Purpose |
-|-------|-------------|----------|
-| **Frontend** | React, TypeScript, Vite | User interface, image upload, results display |
-| **Backend** | Node.js, Express | API server for image and AI inference handling |
-| **AI Layer** | OpenAI Vision Model | Food recognition and nutritional estimation |
-| **Database / Storage** | AWS S3 (planned) | Store user images and logs |
-| **Dev Tools** | ESLint, Prettier, TypeScript | Code quality and static checking |
+### Option 1 – Clone from GitHub
+```bash
+git clone https://github.com/NightRyu/FoodLogApp_ELG5100.git
+cd FoodLogApp_ELG5100
+```
+
+### Option 2 – Manual Download
+```bash
+Go to the GitHub repository page.
+Click Code → Download ZIP.
+Extract the ZIP file and open the folder in your terminal or VS Code.
+```
+
+## 2. Install Dependencies
+
+After downloading or cloning the repository, open a terminal inside the project root directory and run:  
+
+```bash
+npm install  
+```
 
 ---
+
+## 3. Configure Environment Variables
+
+Before running the application, you must provide your **OpenAI API Key**.  
+Create a `.env` file in the project root directory (same level as `package.json`):
+
+```bash
+OPENAI_API_KEY=your_openai_api_key_here
+```
+
+## 4. Run the Application
+
+This project includes both a backend server (API) and a frontend client (React app).  
+Execute the command in the terminal:  
+```bash
+npm run dev
+```
+
+## 5. Run the Demo
+
+1. Open your browser and visit [http://localhost:5173](http://localhost:5173).  
+2. Click the AI Scanning Button.
+3. Upload a food image.  
+4. Wait for the AI to analyze the picture and return the food name, ingredients, and nutrition information.  
+5. Review the results and history logs in the dashboard.  
+6. (Optional) add them into your meal list.
